@@ -45,7 +45,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
 
     }
-
+    //Clears data to empty string
     const clear = () => {
         setCurrentId(null);
         setPostData({

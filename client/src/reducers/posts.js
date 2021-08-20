@@ -9,6 +9,10 @@ export default (posts = [], action) => {
         case 'UPDATE':
             return posts.map((post) => post._id === action.payload._id ? action.payload : post);
 
+        case 'DELETE':
+            return posts.filter((post) => post._id !== action.payload);   //returns all the posts but filters out the posts that were deleted.
+
+
         default:
             return posts;
     }
