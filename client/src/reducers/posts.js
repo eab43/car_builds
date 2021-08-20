@@ -12,6 +12,9 @@ export default (posts = [], action) => {
         case 'DELETE':
             return posts.filter((post) => post._id !== action.payload);   //returns all the posts but filters out the posts that were deleted.
 
+        case 'LIKE':
+            return posts.map((post) => post._id === action.payload._id ? action.payload : post);
+
 
         default:
             return posts;

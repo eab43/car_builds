@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 
 import memories from './images/memories.png';
+import car from './images/car.jpg';
+
 
 import { useDispatch } from 'react-redux';
 
@@ -28,9 +30,9 @@ const App = () => {
 
     return (
         <Container maxidth='lg'>
-            <AppBar className={classes.appBar} position='static' color='inherit'>
-                <Typography variant='h2' align='center'>Memories</Typography>
-                <img className={classes.image} src={memories} alt='memories' height="60" />
+            <AppBar className={classes.appBar} position='static' color='inherit' align='left' /*This, elevation={0}, gets rid of box shadow*/>
+                <Typography className={classes.typography} variant='h2' >Car Builds</Typography>
+                {/* <img className={classes.image} src={car} alt='car' height='80' />  */}
             </AppBar>
             <Grow in>
                 <Container>
