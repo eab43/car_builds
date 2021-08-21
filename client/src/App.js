@@ -36,7 +36,7 @@ const App = () => {
             </AppBar>
             <Grow in>
                 <Container>
-                    <Grid container justifyContent='space-between' alignItems='stretch' spacing={4}>
+                    <Grid className={classes.mobileGrid} container justifyContent='space-between' alignItems='stretch' spacing={4}>
                         <Grid item xs={12} sm={7}>
                             <Posts setCurrentId={setCurrentId} />
 

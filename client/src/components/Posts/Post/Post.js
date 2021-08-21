@@ -36,7 +36,7 @@ const Post = ({ post, setCurrentId }) => {
             <Typography className={classes.title} variant='h5'>{post.title}</Typography>
 
             <div className={classes.details}>
-                <Typography variant='subtitle3' fontSize='' color='textSecondary'>{post.tags.map((tag) => `#${tag} `)}</Typography>
+                <Typography variant='body2' color='textSecondary'>{post.tags.map((tag) => `#${tag} `)}</Typography>
             </div>
             <CardContent>
                 <Typography className={classes.message} variant='body2' color='textSecondary' component='p' gutterBottom>{post.message}</Typography>
@@ -44,7 +44,7 @@ const Post = ({ post, setCurrentId }) => {
             <CardActions className={classes.cardActions}>
                 <Button size='small' color='primary' onClick={() => dispatch(likePost(post._id))}>
                     <ThumbUpAltIcon fontSize='small' />
-                    Like
+                    &nbsp; Like &nbsp;
                     {post.likeCount}
                 </Button>
 

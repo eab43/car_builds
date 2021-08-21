@@ -42,7 +42,7 @@ export default makeStyles({
         marginTop: '3px',
         marginLeft: '7px',
         fontSize: '14px',
-        fontStyle: 'italic',
+        //fontStyle: 'italic',
     },
     title: {
         padding: '0 6px',
