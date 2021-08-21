@@ -29,19 +29,19 @@ const App = () => {
     }, [currentId, dispatch]);
 
     return (
-        <Container maxidth='lg'>
-            <AppBar className={classes.appBar} position='static' color='inherit' align='left' /*This gets rid of box shadow*/ elevation={0}>
+        <Container maxWidth='xl'>
+            <AppBar className={classes.appBar} position='static' color='inherit' align='center' /*This gets rid of box shadow: */ elevation={0} >
                 <Typography className={classes.typography} variant='h2' >Car Builds</Typography>
                 {/* <img className={classes.image} src={car} alt='car' height='80' />  */}
             </AppBar>
             <Grow in>
-                <Container>
-                    <Grid className={classes.mobileGrid} container justifyContent='space-between' alignItems='stretch' spacing={4}>
-                        <Grid item xs={12} sm={7}>
+                <Container maxWidth='xl'>
+                    <Grid className={classes.mobileGrid} container justifyContent='space-between' alignItems='stretch' spacing={3}>
+                        <Grid item xs={12} sm={6} md={9}>
                             <Posts setCurrentId={setCurrentId} />
 
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} sm={6} md={3}>
                             <Form currentId={currentId} setCurrentId={setCurrentId} />
                         </Grid>
                     </Grid>

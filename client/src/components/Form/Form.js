@@ -43,8 +43,6 @@ const Form = ({ currentId, setCurrentId }) => {
 
         }
         cancel();
-
-
     }
     //Clears data to empty string
     const cancel = () => {
@@ -93,7 +91,7 @@ const Form = ({ currentId, setCurrentId }) => {
                     label='Parts List'
                     fullWidth
                     value={postData.parts_list}
-                    onChange={(e) => setPostData({ ...postData, parts_list: e.target.value })}
+                    onChange={(e) => setPostData({ ...postData, parts_list: e.target.value.split(',') })}
                 />
 
                 <TextField

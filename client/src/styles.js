@@ -5,11 +5,14 @@ export default makeStyles((theme) => ({
         margin: '30px 0',
         display: 'flex',
         flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingBottom: '15px'
     },
     typography: {
         width: '100%',
-        textAlign: 'left',
-        marginLeft: '15px',
+        textAlign: 'center',
+        fontSize: '5rem',
         fontFamily: [
             'Yellowtail',
         ].join(','),
