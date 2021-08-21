@@ -11,7 +11,7 @@ import { createPost, updatePost } from '../../actions/posts';
 
 const Form = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({
-        creator: '',
+        author: '',
         title: '',
         message: '',
         tags: '',
@@ -49,7 +49,7 @@ const Form = ({ currentId, setCurrentId }) => {
     const clear = () => {
         setCurrentId(null);
         setPostData({
-            creator: '',
+            author: '',
             title: '',
             message: '',
             tags: '',
@@ -60,14 +60,14 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
         <Paper className={classes.paper}>
             <form autoComplete='off' noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
-                <Typography variant='h6'>{currentId ? 'Editing' : 'Creating'} a Memory</Typography>
+                <Typography variant='h6'>{currentId ? 'Editing' : 'Post'} {currentId ? '' : 'a'} {currentId ? 'Build' : 'Build!'}</Typography>
                 <TextField
-                    name='creator'
+                    name='author'
                     variant='outlined'
-                    label='Creator'
+                    label='Author'
                     fullWidth
-                    value={postData.creator}
-                    onChange={(e) => setPostData({ ...postData, creator: e.target.value })}
+                    value={postData.author}
+                    onChange={(e) => setPostData({ ...postData, author: e.target.value })}
                 />
 
                 <TextField
@@ -87,6 +87,14 @@ const Form = ({ currentId, setCurrentId }) => {
                     fullWidth
                     value={postData.message}
                     onChange={(e) => setPostData({ ...postData, message: e.target.value })}
+                />
+                <TextField
+                    name='parts_list'
+                    variant='outlined'
+                    label='Parts List'
+                    fullWidth
+                    value={postData.parts_list}
+                    onChange={(e) => setPostData({ ...postData, parts_list: e.target.value })}
                 />
 
                 <TextField
@@ -110,7 +118,7 @@ const Form = ({ currentId, setCurrentId }) => {
                 </Button>
 
                 <Button variant='contained' color='secondary' size='small' onClick={clear} fullWidth>
-                    Clear
+                    Cancel
                 </Button>
 
             </form>

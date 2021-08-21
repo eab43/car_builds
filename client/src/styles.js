@@ -10,6 +10,9 @@ export default makeStyles((theme) => ({
         width: '100%',
         textAlign: 'left',
         marginLeft: '15px',
+        fontFamily: [
+            'Yellowtail',
+        ].join(','),
 
     },
     heading: {

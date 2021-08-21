@@ -30,7 +30,7 @@ const App = () => {
 
     return (
         <Container maxidth='lg'>
-            <AppBar className={classes.appBar} position='static' color='inherit' align='left' /*This, elevation={0}, gets rid of box shadow*/>
+            <AppBar className={classes.appBar} position='static' color='inherit' align='left' /*This gets rid of box shadow*/ elevation={0}>
                 <Typography className={classes.typography} variant='h2' >Car Builds</Typography>
                 {/* <img className={classes.image} src={car} alt='car' height='80' />  */}
             </AppBar>
