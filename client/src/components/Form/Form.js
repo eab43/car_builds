@@ -13,7 +13,7 @@ const Form = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({
         author: '',
         title: '',
-        message: '',
+        description: '',
         tags: '',
         selectedFile: ''
     });
@@ -51,7 +51,7 @@ const Form = ({ currentId, setCurrentId }) => {
         setPostData({
             author: '',
             title: '',
-            message: '',
+            description: '',
             tags: '',
             selectedFile: ''
         });
@@ -81,12 +81,12 @@ const Form = ({ currentId, setCurrentId }) => {
 
 
                 <TextField
-                    name='message'
+                    name='description'
                     variant='outlined'
-                    label='Message'
+                    label='Description'
                     fullWidth
-                    value={postData.message}
-                    onChange={(e) => setPostData({ ...postData, message: e.target.value })}
+                    value={postData.description}
+                    onChange={(e) => setPostData({ ...postData, description: e.target.value })}
                 />
                 <TextField
                     name='parts_list'

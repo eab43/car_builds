@@ -21,6 +21,8 @@ export default makeStyles({
         borderRadius: '15px',
         height: '100%',
         position: 'relative',
+        maxWidth: 345,
+
     },
     overlay: {
         position: 'absolute',
@@ -53,7 +55,7 @@ export default makeStyles({
         display: 'flex',
         justifyContent: 'space-between',
     },
-    message: {
+    description: {
         padding: '0',
         overflow: 'hidden'
     }
