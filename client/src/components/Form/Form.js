@@ -14,6 +14,7 @@ const Form = ({ currentId, setCurrentId }) => {
         author: '',
         title: '',
         description: '',
+        parts_list: '',
         tags: '',
         selectedFile: ''
     });
@@ -41,35 +42,26 @@ const Form = ({ currentId, setCurrentId }) => {
             dispatch(createPost(postData));
 
         }
-        clear();
+        cancel();
 
 
     }
     //Clears data to empty string
-    const clear = () => {
+    const cancel = () => {
         setCurrentId(null);
         setPostData({
             author: '',
             title: '',
             description: '',
+            parts_list: '',
             tags: '',
             selectedFile: ''
         });
-
     }
     return (
         <Paper className={classes.paper}>
             <form autoComplete='off' noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
                 <Typography variant='h6'>{currentId ? 'Editing' : 'Post'} {currentId ? '' : 'a'} {currentId ? 'Build' : 'Build!'}</Typography>
-                <TextField
-                    name='author'
-                    variant='outlined'
-                    label='Author'
-                    fullWidth
-                    value={postData.author}
-                    onChange={(e) => setPostData({ ...postData, author: e.target.value })}
-                />
-
                 <TextField
                     name='title'
                     variant='outlined'
@@ -78,7 +70,14 @@ const Form = ({ currentId, setCurrentId }) => {
                     value={postData.title}
                     onChange={(e) => setPostData({ ...postData, title: e.target.value })}
                 />
-
+                <TextField
+                    name='author'
+                    variant='outlined'
+                    label='Author'
+                    fullWidth
+                    value={postData.author}
+                    onChange={(e) => setPostData({ ...postData, author: e.target.value })}
+                />
 
                 <TextField
                     name='description'
@@ -117,7 +116,7 @@ const Form = ({ currentId, setCurrentId }) => {
                     Submit
                 </Button>
 
-                <Button variant='contained' color='secondary' size='small' onClick={clear} fullWidth>
+                <Button variant='contained' color='secondary' size='small' onClick={cancel} fullWidth>
                     Cancel
                 </Button>
 
