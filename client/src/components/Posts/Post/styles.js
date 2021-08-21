@@ -39,14 +39,21 @@ export default makeStyles({
     details: {
         display: 'flex',
         justifyContent: 'space-between',
-        margin: '20px',
+        marginTop: '3px',
+        marginLeft: '7px',
+        fontSize: '14px',
+        fontStyle: 'italic',
     },
     title: {
-        padding: '0 16px',
+        padding: '0 6px',
     },
     cardActions: {
         padding: '0 16px 8px 16px',
         display: 'flex',
         justifyContent: 'space-between',
     },
+    message: {
+        padding: '0',
+        overflow: 'hidden'
+    }
 });
