@@ -62,10 +62,12 @@ const Post = ({ post, setCurrentId }) => {
                 <Button className={clsx(classes.expand, { [classes.expandOpen]: expanded, })} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more">
                     <ExpandMoreIcon />
                 </Button>
+                {/*
                 <Button size='small' color='primary' onClick={() => dispatch(deletePost(post._id))}>
                     <DeleteIcon fontSize='small' />
                     Delete
                 </Button>
+                */}
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
