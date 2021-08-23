@@ -10,3 +10,6 @@ A website where people can share their project cars.
 - MongoDB
 - Heroku (Backend)
 - Netlify (Frontend
+
+# License
+This project is under an MIT License.
