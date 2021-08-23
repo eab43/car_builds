@@ -21,7 +21,7 @@ export default makeStyles((theme) => ({
         borderRadius: '15px',
         height: '100%',
         position: 'relative',
-        width: 330
+        width: 360,
     },
     overlay: {
         position: 'absolute',
