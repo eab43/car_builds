@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
         height: '0',
         paddingTop: '75%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        backgroundBlendMode: 'darken',
+        //backgroundBlendMode: 'darken',
     },
     border: {
         border: 'solid',
