@@ -45,7 +45,7 @@ const Post = ({ post, setCurrentId }) => {
             </CardHeader>
             <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
 
-            <Typography className={classes.author} variant='h6'>&nbsp;By&nbsp;{post.author}</Typography>
+            <Typography className={classes.owner} variant='h6'>&nbsp;By&nbsp;{post.owner}</Typography>
 
             <div className={classes.details}>
                 <Typography variant='body2' color='textSecondary'>{post.tags.map((tag) => `#${tag} `)}</Typography>
