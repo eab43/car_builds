@@ -1,6 +1,5 @@
 # Car Builds
-A website where people can share their project cars.
-![carbuilds](https://user-images.githubusercontent.com/78235458/130384628-5610ad7c-952e-4e33-ac2f-6c093abb8ba3.png)
+A website where people can share their car projects.
 
 
 # Created using:
@@ -9,5 +8,9 @@ A website where people can share their project cars.
 - Redux
 - Express
 - MongoDB
+- Material-UI
 - Heroku (Backend)
-- Netlify (Frontend
+- Netlify (Frontend)
+
+# License
+This project is under an MIT License.
