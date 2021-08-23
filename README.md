@@ -1,5 +1,5 @@
 # Car Builds
-A website where people can share their project cars.
+A website where people can share their car projects.
 
 
 # Created using:
