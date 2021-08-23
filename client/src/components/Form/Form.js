@@ -11,7 +11,7 @@ import { createPost, updatePost } from '../../actions/posts';
 
 const Form = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({
-        owner: '',
+        author: '',
         title: '',
         description: '',
         parts_list: '',
@@ -48,7 +48,7 @@ const Form = ({ currentId, setCurrentId }) => {
     const cancel = () => {
         setCurrentId(null);
         setPostData({
-            owner: '',
+            author: '',
             title: '',
             description: '',
             parts_list: '',
@@ -69,12 +69,12 @@ const Form = ({ currentId, setCurrentId }) => {
                     onChange={(e) => setPostData({ ...postData, title: e.target.value })}
                 />
                 <TextField
-                    name='owner'
+                    name='author'
                     variant='outlined'
-                    label='owner'
+                    label='Author'
                     fullWidth
-                    value={postData.owner}
-                    onChange={(e) => setPostData({ ...postData, owner: e.target.value })}
+                    value={postData.author}
+                    onChange={(e) => setPostData({ ...postData, author: e.target.value })}
                 />
 
                 <TextField
