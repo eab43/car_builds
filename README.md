@@ -7,6 +7,7 @@ A website where people can share their car projects.
 - Nodejs
 - Redux
 - Express
+- Axios
 - MongoDB
 - Material-UI
 - Heroku (Backend)
